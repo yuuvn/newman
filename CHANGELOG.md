@@ -1,5 +1,60 @@
 ##CHANGELOG
 
+####1.2.28 (January 08, 2016)
+* Fixed handling of null values to be compatible with Postman
+* Fixed a bug in handling of OAuth
+
+####1.2.27 (December 18, 2015)
+* Set default service name to API Gateway for AWS Authentication
+
+####1.2.26 (December 18, 2015)
+* Fixed json traversal https://github.com/postmanlabs/newman/issues/301
+* Added support for AWS Signature v4 authentication
+
+####1.2.25 (December 01, 2015)
+* Added support for Hawk Authentication
+
+####1.2.24 (November 27, 2015)
+* Added `name` and `description` to request object in the Sandbox
+* Fixed null OAuth params https://github.com/postmanlabs/postman-app-support/issues/1543
+* Fixed a bug where GZip requests failed for no reason
+
+####1.2.23 (October 20, 2015)
+* Empty data array fields don't cause errors
+
+####1.2.22 (October 18, 2015)
+* Adding option to limit recursive resolution depth
+
+####1.2.21 (September 24, 2015)
+* Adding --whiteScreen flag
+* Adding option to print all requests and responses in a file
+
+####1.2.20 (September 24, 2015)
+* Adding -R option to block redirects
+* Adding sugarJS number prototype
+* Adding clearVariables sandbox function
+
+####1.2.19 (September 14, 2015)
+* Fix for https://github.com/postmanlabs/postman-app-support/issues/1329 (Backslashes in variables)
+* JSON.parse shows parsing errors, if any
+
+####1.2.18 (August 7, 2015)
+* When used as a library, the callback returns the exit code correctly
+* Form fields that are disabled are not sent
+* CryptoJS (https://code.google.com/p/crypto-js/) available in the test/pre-request script sandbox
+* Repository link updated in CLI
+
+####1.2.17 (July 1, 2015)
+* -x / --exitCode works correctly in standalone/library mode
+
+####1.2.16 (June 18, 2015)
+* Custom paths to export environment/global files after the run
+* Support for custom request timeouts
+* Jenkins-compatible JUnit output
+
+####1.2.15 (March 19, 2015)
+* Support for authentication helpers (Basic, Digest, OAuth1.0)
+
 ####1.2.14 (March 13, 2015)
 * Removing dead code for BOM-removal. This also fixes zero-length body cases
 * Adding support for commas in data file fields, and double-quotes to surround fields (in line with Postman)
@@ -29,13 +84,13 @@
 
 ####1.2.5 (January 14, 2015)
 * Correcting jUnit export format
-* Test resuts are now parsed consistently (truthy/falsy values are accepted)
+* Test results are now parsed consistently (truthy/falsy values are accepted)
 
 ####1.2.4 (December 20, 2014)
 * Fixed command-line flag for HTML report
 
 ####1.2.3 (December 16, 2014)
-* Fixed jQuery dependeny issue
+* Fixed jQuery dependecny issue
 
 ####1.2.1 (December 8, 2014)
 * Added HTML reporting capability
