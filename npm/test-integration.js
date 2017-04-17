@@ -110,7 +110,7 @@ module.exports = function (exit) {
         }
         else {
             console.error('\nintegration test failed:'.red);
-            console.error(_.omit(err, ['stacktrace', 'stack']), { colors: true });
+            console.error(_.omit(err, ['stacktrace', 'stack']));
         }
 
         exit(err, results);
